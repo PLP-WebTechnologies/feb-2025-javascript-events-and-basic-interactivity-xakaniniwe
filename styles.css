@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light pastel background */
+}
+
+header {
+    text-align: left; /* left the header text initially */
+    padding: 20px; /* Add some padding around the header */
+    background-image: url('pink_glitter.jpg'); /* Reference to your pink glitter image */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: #fff; /* Change text color to white for better contrast */
+}
+
+.header-text h1 {
+    font-family: 'Pacifico', cursive; /* Apply the fun font */
+    font-weight: bold; /* Make the heading bold */
+    font-size: 2.5em; /* Adjust size as needed */
+    animation: fadeIn 2s; /* Add animation */
+}
+
+.header-text.tagline,
+.header-text .mission {
+    font-family: 'Pacifico', cursive; /* Apply the fun font */
+    font-weight: bold; /* Make the text bold */
+    animation: fadeIn 5s; /* Add animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start from transparent */
+    }
+    to {
+        opacity: 1; /* Fade to fully visible */
+    }
+}
+
+.header-text {
+    text-align: center; /* center-align the tagline and mission */
+    color: #fff; /* White color for better contrast */
+}
+
+.logo {
+    width: 300px; /* Logo width */
+    height: 300px; /* Logo height */
+}
+
+nav {
+    margin-top: 20px; /* Added margin for spacing */
+    background-color: rgba(175, 238, 238, 0.8); /* Semi-transparent light teal background for navigation */
+}
+
+.nav-links {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the navigation items */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Space between navigation items */
+}
+
+.nav-links a {
+    color: rgb(72, 37, 209); /* Initial text color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px; /* Add padding for clickable area */
+    font-weight: bold; /* Make the navigation links bold */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition for color changes */
+}
+
+/* Change color when hovering over a link */
+.nav-links a:hover {
+    color: white; /* Change text color on hover */
+    background-color: rgb(72, 37, 209); /* Change background color on hover */
+    border-radius: 5px; /* Optional: Add rounded corners */
+
+    
+}section {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 5px;
+    background-color: #ffffff; /* White background for sections */
+}
+
+h2, h3, h4 {
+    color: #5e4b8c; /* Pastel purple */
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 25%; /* Reduced container width by half again */
+    margin: auto; /* Center the slideshow */
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.caption {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.comment-box {
+    margin-top: 20px;
+}
+
+.comment-box textarea {
+    width: 100%;
+    height: 50px; /* Reduced height of the comment box */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #e0e0e0; /* Light gray borders */
+    padding: 10px;
+    text-align: left;
+}
+
+footer {
+    background: #a0d6e8; /* Pastel blue */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#colorChangeButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF; /* Initial background color */
+    color: white; /* Initial text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+}
+
+#colorChangeButton:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+.feedback {
+    color: red; /* Red color for error messages */
+    font-size: 0.9em;
+    display: block; /* Display feedback below the input */
+}
